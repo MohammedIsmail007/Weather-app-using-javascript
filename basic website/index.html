@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather app</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-slate-900">
+
+    <div class="card text-center w-2/5 rounded-md h-auto bg-gradient-to-r from-sky-500 to-blue-400  translate-x-96 p-8">
+        <div class="search w-auto flex justify-between items-center">
+
+            <input type="text" placeholder="city name" spellcheck="false"
+                class="bg-white-200 h-10 rounded-3xl flex-1 mr-4 text-lg">
+
+            <button class="bg-slate-100 rounded-xl text-sm p-2 hover:bg-sky-300">
+
+                SEARCH
+
+            </button>
+        </div>
+        <div class="error" style="display: none;">
+
+            <p class="text-white p-3">Invalid City Name</p>
+
+        </div>
+
+        <div class="weather " style="display:none">
+
+            <img src="img/rain.png" class="weather-icon w-44 m-auto">
+
+            <h1 class="temp text-white text-7xl font-medium ">22°c</h1>
+
+            <h2 class="city text-white text-5xl font-medium -mt-2 pb-3">New Delhi</h2>
+
+            <div class="flex justify-between items-center">
+
+                <div class="col">
+                    <img src="img/humidity.png" class="m-auto" alt="">
+
+                    <div>
+                        <p class="humidity text-white text-3xl">50%</p>
+                        <p class="text-white text-2xl">HUMIDITY</p>
+                    </div>
+
+                </div>
+
+                <div class="col">
+                    <img src="img/wind.png" class="m-auto" alt="">
+                    <div>
+                        <p class="wind text-white text-3xl">15 km/h</p>
+                        <p class="text-white text-2xl">WIND SPEED</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
